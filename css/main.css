@@ -1,0 +1,147 @@
+body {
+	background: url(http://subtlepatterns.com/patterns/subtlenet2.png);
+	font: 1em 'PT Sans', Tahoma, Arial;
+	padding: 0px;
+	margin: 0px;
+}
+
+/* ШАПКА ................................. САЙТА */
+.page {
+	width: 1000px;
+	position: relative;
+	left: 50%;
+	margin-left: -500px;
+
+}
+
+.header {
+	position: relative;
+	width: 100%;
+	background: #696969;
+	height: 150px;
+	margin-bottom: 10px;
+
+}
+.header div {
+	display: inline-block;
+}
+.header .header_img {
+	
+	height: 150px;
+	width: 250px;
+	background: url("file:///F:/JavaScript+HTMLCSS/htmlcss/img/header_front_end.jpg") no-repeat;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	border-radius: 80%;
+}
+
+
+/* ШАПКА ЛОГИН................................. САЙТА */
+
+.header .btn-login {
+	background: #none;
+	color: #fff;
+	text-decoration: none;
+
+	border: 1px solid #fff;
+	border-radius: 5px;
+	float: right;
+	margin-top: 30px;
+	width: 100px;
+	padding: 10px;
+}
+
+.header .btn-registration {
+	background: none;
+	color: #fff;
+	text-decoration: none;
+	margin-right: 10px;
+	margin-left: 5px;
+	
+	border: 1px solid #fff;
+	border-radius: 5px;
+	float: right;
+	margin-top: 30px;
+	width: 100px;
+	padding: 10px;
+}
+.header .btn-login:hover, .btn-registration:hover {
+	background: #26a8b0;
+}
+
+
+
+
+
+
+.header .header_login {
+	border: 1px solid red;
+	float: right;
+	padding: 10px;
+	margin-top: 20px;
+	margin-right: 20px;
+	
+	
+}
+
+.header .header_login input[type="text"],
+.header .header_login input[type="email"] 
+{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	outline: none;
+	display: block;
+	width: 100%;
+	padding: 7px;
+	border: none;
+	border-bottom: 1px solid #ddd;
+	background: transparent;
+	margin-bottom: 10px;
+	font: 12px Arial, Helvetica, sans-serif;
+	height: 35px;
+}
+
+/* ЛЕВАЯ КОЛОНКА .......................... САЙТА */
+
+.left-side {
+	float: left;
+	width: 180px;
+	height: 700px;
+	background: #696969;
+	text-align: left;
+
+}
+
+.left-side a{
+	display: block;
+}
+
+.left-side a:hover {
+	background: red;
+}
+
+
+/* ГЛАВНАЯ КОЛОНКА .......................... САЙТА */
+.main {
+	width: 810px;
+	height: 700px;
+	float: right;
+	background: #696969 ;
+	margin-bottom: 10px;
+	
+	
+}
+
+/* ПОДВАЛ  .......................... САЙТА */
+
+.footer{
+	clear: both;
+	width: 100%;
+	background: #696969;
+	height: 100px;
+}
+.text {
+	color: white;
+
+}
