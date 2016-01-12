@@ -1,5 +1,5 @@
 body {
-	background: url(http://subtlepatterns.com/patterns/subtlenet2.png);
+	background: url("file:///F:/JavaScript+HTMLCSS/htmlcss/img/background.jpg");
 	font: 1em 'PT Sans', Tahoma, Arial;
 	padding: 0px;
 	margin: 0px;
@@ -7,32 +7,28 @@ body {
 
 /* ШАПКА ................................. САЙТА */
 .page {
-	width: 1000px;
+	width: 100%;
 	position: relative;
-	left: 50%;
-	margin-left: -500px;
+	
 
 }
 
 .header {
 	position: relative;
 	width: 100%;
-	background: #696969;
-	height: 150px;
-	margin-bottom: 10px;
+	
+	height: 100px;
 
 }
 .header div {
 	display: inline-block;
 }
-.header .header_img {
-	
-	height: 150px;
-	width: 250px;
-	background: url("file:///F:/JavaScript+HTMLCSS/htmlcss/img/header_front_end.jpg") no-repeat;
+.header .logo1 {
+	height: 100px;
+	width: 150px;
+	background: url("file:///F:/JavaScript+HTMLCSS/htmlcss/img/html5-logo-site.png") no-repeat;
 	-webkit-background-size: 100% 100%;
 	background-size: 100% 100%;
-	border-radius: 80%;
 }
 
 
@@ -102,46 +98,105 @@ body {
 	height: 35px;
 }
 
+
+
+
+
+/* МЕНЮ НАВИГАЦИИ .......................*/
+.list {
+	width: auto;
+	height: 50px;
+	border: 1px solid red;
+	
+}
+.list ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+.list li {
+	display: inline-block;
+
+}
+.list a {
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	padding: 16px 20px 15px 5px;
+	margin-right: -6px;
+	font-weight: bold;
+}
+.list a:hover {
+	background: #26a8b0;
+}
+
+
+
+
 /* ЛЕВАЯ КОЛОНКА .......................... САЙТА */
 
 .left-side {
 	float: left;
-	width: 180px;
-	height: 700px;
+	width: 13%;
+	min-height: 700px;
 	background: #696969;
 	text-align: left;
-
+	margin-bottom: 69px;
 }
 
-.left-side a{
+.left-side ul {
+	padding: 0px;
+	margin: 0px;
+}
+.left-side li  {
+	list-style:none;
+}
+.left-side ul li a {
 	display: block;
+	text-decoration: none;
+	padding: 2px;
+	margin-left: 2px;
+	color: #fff;
 }
-
 .left-side a:hover {
 	background: red;
+	background: #26a8b0;
 }
+
 
 
 /* ГЛАВНАЯ КОЛОНКА .......................... САЙТА */
 .main {
-	width: 810px;
-	height: 700px;
-	float: right;
+	width: 70%; /*86.9%*/
+	min-height: 700px;
+	float: left;
+	border-left: 1px solid red;
 	background: #696969 ;
-	margin-bottom: 10px;
+	margin-bottom: 69px;
+
 	
 	
+}
+.main .text {
+	color: white;
 }
 
 /* ПОДВАЛ  .......................... САЙТА */
 
 .footer{
+	position: relative;
 	clear: both;
 	width: 100%;
 	background: #696969;
-	height: 100px;
-}
-.text {
+	height: 50px;
 	color: white;
+	
+}
+.footer .footer-text{
+	position: absolute;
+	width: auto;
+	height: 20px;
+	left: 200px;
+	top: 15px;
 
 }
