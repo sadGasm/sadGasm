@@ -218,3 +218,8 @@
 .login-form .footer .btn-remember {
 	margin: 10px;
 }
+.login-form .footer .btn-remember span{
+	font-size: 14px;
+	line-height: 16px;
+	color: #26a8b0;
+}
