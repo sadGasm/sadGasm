@@ -1,0 +1,46 @@
+body{
+	margin:0px;
+	padding:0px;
+}
+#wrapper{
+	margin:0 auto;
+	width:auto;
+	padding: 25px;
+}
+#A{
+	padding:20px;
+	height:120px;
+	background:#ccc;
+	margin-bottom: 40px;	
+}
+#B{
+	padding:20px;
+	margin:0 auto;
+	background: green;
+	width:auto;
+	height: 500px;
+}
+#C{
+	padding:20px;
+	width:250px;
+	background: red;
+	float:left;
+	height: 500px;
+}
+#D{
+	padding:20px;
+	width:250px;
+	background: blue;
+	float:right;
+	height: 500px;	
+}
+#E{
+	margin-top: 40px;
+	padding:20px;
+	background:#ccc;
+	width:auto;
+	height:100px;
+}
+.clear{
+	clear:both;
+}
