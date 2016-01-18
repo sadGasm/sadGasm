@@ -1,5 +1,5 @@
 body {
-	background: url("file:///F:/JavaScript+HTMLCSS/htmlcss/img/background.jpg");
+	background: url("file:///F:/JavaScript+HTMLCSS/Example%201/img/background.jpg");
 	font: 1em 'PT Sans', Tahoma, Arial;
 	padding: 0px;
 	margin: 0px;
@@ -22,7 +22,7 @@ body {
 .header .logo1 {
 	height: 100px;
 	width: 150px;
-	background: url("file:///F:/JavaScript+HTMLCSS/htmlcss/img/html5-logo-site.png") no-repeat;
+	background: url("file:///F:/JavaScript+HTMLCSS/Example%201/img/html5-logo-site.png") no-repeat;
 	-webkit-background-size: 100% 100%;
 	background-size: 100% 100%;
 }
@@ -175,7 +175,7 @@ body {
 	list-style:none;
 	width: 40px;
 	height: 40px;
-	background: url("file:///F:/JavaScript+HTMLCSS/htmlcss/img/footer-sprite.jpg") no-repeat 0 0;
+	background: url("file:///F:/JavaScript+HTMLCSS/Example%201/img/footer-sprite.jpg") no-repeat 0 0;
 }
 .icons a {
 	display: inline-block;
