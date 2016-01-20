@@ -13,7 +13,7 @@ body {
 	width: 400px;
 	height: 400px;
 	border-radius: 25px;
-	background:  #87CEFA;
+	background: #87CEFA;
 	box-shadow: 6px 6px 0 #4169E0;
 }
 .clock-inner {
@@ -23,7 +23,7 @@ body {
 	left: calc(50% - 150px);
 	top: calc(50% - 150px);
 	border-radius: 50%;
-	background:  #fff;
+	background: #fff;
 	box-shadow: inset 4px 4px 6px rgba(30,144,255,.3), inset -4px -4px 6px rgba(30,144,255,.2);
 }
 .clock-numbers {
@@ -69,7 +69,6 @@ body {
 	left: calc(50% - 5px);
 	transform-origin: 5px 120px;
 	animation: clock 60s steps(60, end) infinite;
-	z-index: 1;
 }
 .clock-line:before {
 	content: "";
@@ -81,6 +80,18 @@ body {
 	box-shadow: 1px 1px 2px rgba(0,0,0,.3);
 	top: calc(100% - 10px);
 	left: calc(100% - 7px);
+}
+.clock-line:after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-bottom: 14px solid blue;
+	background: #fff;
+	top: calc(100% - 120px);
+	left: calc(100% - 9px);
 }
 
 @keyframes clock {
