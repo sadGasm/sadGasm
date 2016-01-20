@@ -25,13 +25,14 @@ body {
 	background: url("file:///F:/JavaScript+HTMLCSS/Example%201/img/html5-logo-site.png") no-repeat;
 	-webkit-background-size: 100% 100%;
 	background-size: 100% 100%;
+
 }
 
 
 /* ШАПКА ЛОГИН................................. САЙТА */
 
 .header .btn-login {
-	background: #none;
+	background: none;
 	color: #fff;
 	text-decoration: none;
 	border: 1px solid #fff;
@@ -64,7 +65,62 @@ body {
 	margin-right: 20px;
 }
 
+#logo-animation {
+	width: 100px;
+	height: 100px;
+	transform: translate(50%, 0%);
+	
+}
+#logo-animation span {
+	display: block;
+	position: absolute;
+	width: 40%;
+	height: 40%;
+	border-radius: 50%;
+	box-shadow: 2px 2px 3px rgba(0,0,0,.8);
+	animation: spin 2s infinite ease-in-out;
+}
+#logo-animation .one {
+	background: #fff;
+	animation-delay: 1.5s;
+}
+#logo-animation .one:hover {
+	background: red;
 
+}
+#logo-animation .two {
+	background: #26a8b0;
+	animation-delay: 1s;
+}
+#logo-animation .three {
+	background: #fff;
+	animation-delay: 0.5s;
+}
+#logo-animation .four {
+	background: #26a8b0;
+}
+
+@-webkit-keyframes spin {
+	0% {
+		transform: translate(0%);
+		border-radius: 50%;
+	}
+	25% {
+		transform: translate(150%) scale(0.5);
+		border-radius: 0%;
+	}
+	50% {
+		transform: translate(150%, 150%);
+		border-radius: 50%;
+	}
+	75% {
+		transform: translate(0%, 150%) scale(0.5);
+		border-radius: 0%;
+	}
+	100% {
+		transform: translateX(0px) scale(1);
+	}
+}
 
 
 
