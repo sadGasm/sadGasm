@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<title>Porfolio</title>
+<link rel="stylesheet" href="main.css">
+<script type="text/javascript" src="jquery-2.2.0.js"></script>
+<script type="text/javascript">
+     var slideWidth=500;
+     var sliderTimer;
+     $(function(){
+        $('.slidewrapper').width($('.slidewrapper').children().size()*slideWidth);
+        sliderTimer=setInterval(nextSlide,1000);
+         $('.viewport').hover(function(){
+             clearInterval(sliderTimer);
+    },function(){
+        sliderTimer=setInterval(nextSlide,1000);
+    });
+});
+
+function nextSlide(){
+    var currentSlide=parseInt($('.slidewrapper').data('current'));
+    currentSlide++;
+    if(currentSlide>=$('.slidewrapper').children().size()) {
+        currentSlide=0;   
+    }
+    $('.slidewrapper').animate({left: -currentSlide*slideWidth},500).data('current',currentSlide);
+}
+    </script>
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<div id="header-logo"></div>
+			<div id="header-panel">
+				<ul>
+					<li><a href="">Home</a></li>
+					<li><a href="">Guitar</a></li>
+					<li><a href="">Services</a></li>
+					<li><a href="">Contact</a></li>
+				</ul>
+			</div>
+
+			<div id="header-search"></div>
+			
+		</div>
+
+			<div id="content">
+				<div class='viewport'>
+        <ul class='slidewrapper' data-current=0>
+            <li class='slide'>
+                
+            </li>
+            <li class='slide second'>
+               
+            </li>
+            <li class='slide third'>
+                
+            </li>
+        </ul>
+    </div>
+
+			</div>
+
+
+		<div id="footer">FOOTER</div>
+	</div>
+</div>
+</body>
+</html>

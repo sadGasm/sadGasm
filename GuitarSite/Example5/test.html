@@ -1,0 +1,198 @@
+<html>
+<meta charset="utf-8">
+<title>Porfolio</title>
+<link rel="stylesheet" href="test.css">
+<script type="text/javascript" src="jquery-2.2.0.js"></script>
+<script type="text/javascript">
+     var slideWidth=500;
+     var sliderTimer;
+     $(function(){
+        $('.slidewrapper').width($('.slidewrapper').children().size()*slideWidth);
+        sliderTimer=setInterval(nextSlide,5000);
+         $('.viewport').hover(function(){
+             clearInterval(sliderTimer);
+    },function(){
+        sliderTimer=setInterval(nextSlide,5000);
+    });
+});
+
+function nextSlide(){
+    var currentSlide=parseInt($('.slidewrapper').data('current'));
+    currentSlide++;
+    if(currentSlide>=$('.slidewrapper').children().size()) {
+        currentSlide=0;   
+    }
+    $('.slidewrapper').animate({left: -currentSlide*slideWidth},500).data('current',currentSlide);
+}
+    </script>
+<body>
+    <div class='viewport'>
+        <ul class='slidewrapper' data-current=0>
+            <li class='slide'>
+                <h2>Yamaha philosophy</h2>
+                <p>The Yamaha Philosophy consists of the Corporate Slogan, which is a more concise statement 
+                    of Yamaha's Corporate Philosophy, the Corporate Philosophy, which defines the reason for
+                    our existence as a company and the goals that we seek to achieve through our work and corporate
+                    management, and the "Way" which explain the mindset that all employees of the Yamaha Group should adopt,
+                    and the manner in which they should act on a daily basis. We utilize the Yamaha Philosophy as a foundation
+                    to draw from, and try to think from the customer's viewpoint as we build on unique expertise and sensibilities,
+                    as well as the reputation for unparalleled reliability gained during our long history. Our goal in doing so is
+                    to consistently provide high quality products and services that exceed the expectations of our customers,
+                    and to create excitement and cultural inspiration together with people around the world.</p>
+                <h2>Corporate Slogan</h2>
+                <p>Sharing Passion & Perfomance</p>
+                <h2>Corporate Philosophy</h2>
+                <p>With our unique expertise and sensibilities,gained from our devotion to sound and music,we are committed
+                 to creating excitement and cultural inspiration together with people around the world.</p>
+                <h2>Way</h2>
+                <h3>Embrace Your Will ……… Will</h3>
+                <p>While endeavoring to provide customer satisfaction and contribute to society and culture, be passionate in your work.</p>
+                <h3>Stand on Integrity ……… Integrity</h3>
+                <p>Take pride in your work but maintain an attitude of humility, working with integrity to provide craftsmanship and services of the highest quality.</p>
+                <h3>Take Proactive Actions ……… Initiative</h3>
+                <p>Be proactive in your work; observe, consider, discuss, and act to strengthen individual and team performance.</p>
+                <h3>Go Beyond the Limits ……… Challenge</h3>
+                <p>Don't limit yourself—have the courage to take on new challenges</p>
+                <h3>Stick to the Goals ……… Commitment</h3>
+                <p>Demonstrate the creativity and fortitude required to ensure your commitments are met.</p>
+            </li>
+            <li class='slide second'>
+                <h2>Yamaha History</h2>
+                <table>
+                    <tr>
+                        <td>1887</td>
+                        <td>Torakusu Yamaha builds his first reed organ</td>
+                    </tr>
+                    <tr>
+                        <td>1897</td>
+                        <td>Nippon Gakki Co., Ltd. (current Yamaha Corporation) is established
+                            with capital of 100,000 yen</td>
+                    </tr>
+                    <tr>
+                        <td>1900</td>
+                        <td>Begins production of upright pianos</td>
+                    </tr>
+                    <tr>
+                        <td>1949</td>
+                        <td>Lists its shares on Tokyo Stock Exchange</td>
+                    </tr>
+                    <tr>
+                        <td>1954</td>
+                        <td>Establishes Yamaha Music School and holds pilot classes
+                            Produces its first HiFi player (audio product)</td>
+                    </tr>
+                    <tr>
+                        <td>1955</td>
+                        <td>Establishes Yamaha Motor Co., Ltd. (Splits off the motorcycle
+                            division)</td>
+                    </tr>
+                    <tr>
+                        <td>1958</td>
+                        <td>Begins production of sports equipment
+                            Establishes first overseas subsidiary in Mexico</td>
+                    </tr>
+                    <tr>
+                        <td>1959</td>
+                        <td>Begins production of electronic organ</td>
+                    </tr>
+                    <tr>
+                        <td>1960</td>
+                        <td>Establishes Yamaha International Corporation (current Yamaha 
+                            Corporation of America)</td>
+                    </tr>
+                    <tr>
+                        <td>1962</td>
+                        <td>Begins recreation business</td>
+                    </tr>
+                    <tr>
+                        <td>1964</td>
+                        <td>Begins production of lifestyle-related product</td>
+                    </tr>
+                    <tr>
+                        <td>1965</td>
+                        <td>Begins production of wind instruments</td>
+                    </tr>
+                    <tr>
+                        <td>1966</td>
+                        <td>Yamaha Music Foundation is established
+                            Expands into Europe with the founding of Yamaha Europa GmbH, in West 
+                            Germany</td>
+                    </tr>
+                    <tr>
+                        <td>1968</td>
+                        <td>Issues shares at market price for the first time in Japan</td>
+                    </tr>
+                    <tr>
+                        <td>1971</td>
+                        <td>Begins production of semiconductors</td>
+                    </tr>
+                    <tr>
+                        <td>1987</td>
+                        <td>Changes company name to Yamaha Corporation to mark the 100th years 
+                            in business</td>
+                    </tr>
+                    <tr>
+                        <td>2002</td>
+                        <td>Establishes Yamaha Music & Electronics (China) Co., Ltd.
+                            Establishes Yamaha Music Holding Europe GmbH (current Yamaha Music 
+                            Europe GmbH)</td>
+                    </tr>
+                    <tr>
+                        <td>2005</td>
+                        <td>Acquires Steinberg Media Technologies GmbH</td>
+                    </tr>
+                    <tr>
+                        <td>2007</td>
+                        <td>Establishes music entertainment business holding company</td>
+                    </tr>
+                    <tr>
+                        <td>2008</td>
+                        <td>Acquires L. Bösendorfer Klavierfabrik GmbH Acquires NEXO S.A.</td>
+                    </tr>
+                    <tr>
+                        <td>2010</td>
+                        <td>Renews Yamaha Ginza Building, a complex including shopping area, concert hall, music studio etc. 
+                            Transfers shares of the lifestyle-related products subsidiary
+                            Completes integration of Japanese piano factories to Kakegawa</td>
+                    </tr>
+                    <tr>
+                        <td>2012</td>
+                        <td>Completes integration of Japanese wind instrument factories to Toyooka 125th years in business (October 12th)</td>
+                    </tr>
+                </table>
+            </li>
+            <li class='slide third'>
+                <h2>Coporate Information</h2>
+                <p>Since 1887, when it began producing reed organs, the Yamaha Corporation in Japan (then Nippon Gakki Co., Ltd.) 
+                    has grown to become the world's largest manufacturer of a full line of musical instruments, and a leading producer
+                    of audio/visual products, semiconductors and other computer related products, sporting goods, home appliances and
+                    furniture, specialty metals, machine tools, and industrial robots .
+
+                    Yamaha owns numerous subsidiaries and affiliates in overseas markets in addition to a number of related companies in Japan.
+
+                    Additionally, Yamaha owns and runs its unique resort facilities throughout Japan so as to enhance our customers' leisure and cultural 
+                    activities. Also, Yamaha provides a place for studying music, sets opportunities for presenting one's own compositions, and creates an 
+                    environment for the enjoyment of a variety of musical endeavors.
+
+                    Since Yamaha Music Foundation was established in 1966, it has generated a wide range of music activities throughout 
+                    global society, including Yamaha music schools, and the Junior Original Concert. Strong commitment to promote and support 
+                    music education and popularization is one of the most significant elements to distinguish Yamaha from its competitors.
+
+                    Yamaha has endeavored to produce products and services that satisfy the diverse needs and desires of people worldwide. 
+                    Its products and services are recognized the world over for superior quality in acoustics, design, technology, 
+                    craftsmanship, and customer oriented services. These products and services under the brand name of Yamaha are highly 
+                    regarded by a large number of professionals, institutions, business people within the related industries, and consumers.
+
+                    Our corporate philosophies are embedded in our customer oriented management and operations; providing excellence in our 
+                    products and services; continuous efforts to expand our existing market and create new markets; enhancement of research 
+                    and development on a long range perspective; commitment to care for end users through providing even better service after 
+                    sale; pursuit of further globalization of Yamaha's business; fostering positive growth through diversification.
+
+                    Yamaha's very basic corporate objective is reflected in everything that it does, which is to contribute to 
+                    the enrichment of the quality of lives for people around the world.</p>
+            </li>
+        </ul>
+    </div>
+   
+</body>
+</html>
