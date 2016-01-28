@@ -4,16 +4,16 @@
 <title>Porfolio</title>
 <link rel="stylesheet" href="main.css">
 <script type="text/javascript" src="jquery-2.2.0.js"></script>
-<script type="text/javascript">
-     var slideWidth=500;
+<!--<script type="text/javascript">
+     var slideWidth=1100;
      var sliderTimer;
      $(function(){
         $('.slidewrapper').width($('.slidewrapper').children().size()*slideWidth);
-        sliderTimer=setInterval(nextSlide,1000);
+        sliderTimer=setInterval(nextSlide,4000);
          $('.viewport').hover(function(){
              clearInterval(sliderTimer);
     },function(){
-        sliderTimer=setInterval(nextSlide,1000);
+        sliderTimer=setInterval(nextSlide,4000);
     });
 });
 
@@ -25,7 +25,8 @@ function nextSlide(){
     }
     $('.slidewrapper').animate({left: -currentSlide*slideWidth},500).data('current',currentSlide);
 }
-    </script>
+</script>
+-->
 <body>
 	<div id="wrapper">
 		<div id="header">
@@ -33,8 +34,25 @@ function nextSlide(){
 			<div id="header-panel">
 				<ul>
 					<li><a href="">Home</a></li>
-					<li><a href="">Guitar</a></li>
-					<li><a href="">Services</a></li>
+					<li class="downtop"><a href="">Product</a>
+                        <ul class="downtop-inside">
+                            <li><a href="">Musical Instruments</a></li>
+                            <li><a href="">Audio & Visual</a></li>
+                            <li><a href="">Commercial Audio</a></li>
+                            <li><a href="">Live Sound</a></li>
+                            <li><a href="">Apps</a></li>
+                            <li><a href="">Acoustic Treatment</a></li>
+                        </ul>
+                    </li>
+					<li class="downtop"><a href="">Services</a>
+                        <ul class="downtop-inside">
+                            <li><a href="">Minsk</a></li>
+                            <li><a href="">Rome</a></li>
+                            <li><a href="">Moscow</a></li>
+                            <li><a href="">Sant Petersburg</a></li>
+
+                        </ul>
+                    </li>
 					<li><a href="">Contact</a></li>
 				</ul>
 			</div>
@@ -43,24 +61,60 @@ function nextSlide(){
 			
 		</div>
 
-			<div id="content">
-				<div class='viewport'>
-        <ul class='slidewrapper' data-current=0>
-            <li class='slide'>
-                
-            </li>
-            <li class='slide second'>
+			<div id="content1">
+                <!--<div class='viewport'>
+                     <ul class='slidewrapper' data-current=0>
+                        <li class='slide'></li>
+                        <li class='slide second'></li>
+                        <li class='slide third'></li>
+                    </ul>
+                </div>
+-->
+                <div class="content-description"><h1>Acoustic Guitars</h1>
+                  <p>The finest hand-selected tonewoods and traditional craftsmanship together with subtle new construction finish and wood technologies give Yamaha acoustic guitars incredible sound, flawless playability and stunning looks.
+                </p>
+                </div>
+           
+                    <div class="content-guitar guitar1">
+                    <h2>FS Series</h2></div> 
                
-            </li>
-            <li class='slide third'>
-                
-            </li>
-        </ul>
-    </div>
-
+                    <div class="content-guitar guitar2">
+                    <h2>FS Series</h2></div> 
+               
+                    <div class="content-guitar guitar3">
+                    <h2>FS Series</h2></div> 
+                          
 			</div>
+            
+            <div id="content2">
+                <!--<div class='viewport'>
+                     <ul class='slidewrapper' data-current=0>
+                        <li class='slide'></li>
+                        <li class='slide second'></li>
+                        <li class='slide third'></li>
+                    </ul>
+                </div>
+-->
+                <div class="content-description"><h1>Classical Guitars</h1>
+                  <p>The finest hand-selected tonewoods and traditional craftsmanship together with subtle new construction finish and wood technologies give Yamaha acoustic guitars incredible sound, flawless playability and stunning looks.
+                </p>
+                </div>
+           
+                    <div class="content-guitar2 guitar4">
+                    <h2>C Series</h2></div> 
+               
+                    <div class="content-guitar2 guitar5">
+                    <h2>CGS Series</h2></div> 
+               
+                    <div class="content-guitar2 guitar6">
+                    <h2>CG Series</h2></div> 
 
+                    <div class="content-guitar2 guitar7">
+                    <h2>GS Series</h2></div> 
+                                  
+            </div>
 
+            
 		<div id="footer">FOOTER</div>
 	</div>
 </div>

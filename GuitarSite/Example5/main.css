@@ -51,6 +51,32 @@ body{
 #header-panel a:hover {
 	color: #fff;
 }
+#header-panel .downtop ul {
+	position: absolute;
+	display: none;
+	width: auto;
+	height: auto;
+
+}
+#header-panel .downtop-inside li a {
+	list-style-type: none;
+	font-size: 0.9em;
+	display: block;
+	width: 100%;
+	border-bottom: 1px solid #828282;
+}
+#header-panel .downtop-inside li:hover {
+	background: #000;
+}
+#header-panel .downtop-inside li {
+	margin: 0;
+	padding: 5px;
+	display: block;
+}
+#header-panel .downtop:hover ul{
+	display: block;
+	background: #F5F5F5;
+}
 
 #header-search {
 	background: url("SearchIcon.png");
@@ -64,17 +90,106 @@ body{
 }
 
 
-#content {
+
+
+
+
+#content1 {
 	width: 100%;
-	height: 500px;
-	background: white;
+	height: auto;
+	margin-bottom: 100px;
+}
+.content-description {
+	width: auto;
+	height: auto;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+.content-description h1 {
+	text-align: center;
+	padding-bottom: 10px;
+}
+.content-description p {
+	text-align: center;
+	margin-bottom: 50px;
+}
+.content-guitar {
+	display: inline-block;
+	position: relative;
+	left: 25%; 
+	margin: 25px;
+	width: 300px;
+	height: 200px;
+	text-align: center;
+	line-height: 200px;
+}
+.guitar1 {
+	background: url(FS-Series.jpg) no-repeat 0 0;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	border-radius: 10%;
+}
+.guitar2 {
+	background: url(F-Series.jpg) no-repeat 0 0;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	border-radius: 10%;
+}
+.guitar3 {
+	background: url(L-Series.jpg) no-repeat 0 0;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	border-radius: 10%;
 }
 
+#content2{
+	width: 100%;
+	height: 500px;
+	margin-bottom: 50px;
+}
+.content-guitar2 {
+	display: inline-block;
+	position: relative; 
+	left: 15%;
+	margin: 25px;
+	width: 300px;
+	height: 200px;
+	text-align: center;
+	line-height: 200px;
+}
+.guitar4 {
+	background: url(C-Series.jpg) no-repeat 0 0;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	border-radius: 10%;
+}
+.guitar5 {
+	background: url(C-Series.jpg) no-repeat 0 0;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	border-radius: 10%;
+}
+.guitar6 {
+	background: url(C-Series.jpg) no-repeat 0 0;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	border-radius: 10%;
+}
+.guitar7 {
+	background: url(C-Series.jpg) no-repeat 0 0;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	border-radius: 10%;
+}
+
+
+
 .viewport{
-    width: 500px;
+    width:1100px;
     height: 500px;
     overflow: hidden;
     position: relative;
+    margin: 0 auto;
 }
 .slidewrapper{
     position: absolute;
@@ -85,19 +200,19 @@ body{
     padding: 0;    
 }
 .slide{
-    width: 500px;
+    width: 1100px;
     height: 500px;
     float: left;
     list-style: none;
     margin: 0;
     padding: 0;
-    background: #ff0000;
+    background: url("image1.jpeg") no-repeat;
 }
 .second{
-     background: #00ff00;  
+     background: url("image2.png") no-repeat;  
 }
 .third{
-     background: #0000ff;   
+     background: url("image3.png") no-repeat;
 }
 
 #footer {
