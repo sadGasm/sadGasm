@@ -27,8 +27,23 @@ function nextSlide(){
 }
 </script>
 -->
+<script>
+  $(function() {
+        $(window).scroll(function() {
+            if($(this).scrollTop() >= 500) {
+                $('#toTop').fadeIn();
+            } else {
+        $('#toTop').fadeOut();
+    }
+});
+        $('#toTop').click(function() {
+        $('body,html').animate({scrollTop:0},300);
+    });
+});
+</script>
 <body>
 	<div id="wrapper">
+        <div id="toTop">^ Наверх</div>
 		<div id="header">
 			<div id="header-logo"></div>
 			<div id="header-panel">
@@ -114,8 +129,95 @@ function nextSlide(){
                                   
             </div>
 
-            
-		<div id="footer">FOOTER</div>
+
+        
+            <div id="content2">
+                <!--<div class='viewport'>
+                     <ul class='slidewrapper' data-current=0>
+                        <li class='slide'></li>
+                        <li class='slide second'></li>
+                        <li class='slide third'></li>
+                    </ul>
+                </div>
+-->
+                <div class="content-description"><h1>Classical Guitars</h1>
+                  <p>The finest hand-selected tonewoods and traditional craftsmanship together with subtle new construction finish and wood technologies give Yamaha acoustic guitars incredible sound, flawless playability and stunning looks.
+                </p>
+                </div>
+           
+                    <div class="content-guitar2 guitar4">
+                    <h2>C Series</h2></div> 
+               
+                    <div class="content-guitar2 guitar5">
+                    <h2>CGS Series</h2></div> 
+               
+                    <div class="content-guitar2 guitar6">
+                    <h2>CG Series</h2></div> 
+
+                    <div class="content-guitar2 guitar7">
+                    <h2>GS Series</h2></div> 
+                                  
+            </div>
+            <div id="content2">
+                <!--<div class='viewport'>
+                     <ul class='slidewrapper' data-current=0>
+                        <li class='slide'></li>
+                        <li class='slide second'></li>
+                        <li class='slide third'></li>
+                    </ul>
+                </div>
+-->
+                <div class="content-description"><h1>Classical Guitars</h1>
+                  <p>The finest hand-selected tonewoods and traditional craftsmanship together with subtle new construction finish and wood technologies give Yamaha acoustic guitars incredible sound, flawless playability and stunning looks.
+                </p>
+                </div>
+           
+                    <div class="content-guitar2 guitar4">
+                    <h2>C Series</h2></div> 
+               
+                    <div class="content-guitar2 guitar5">
+                    <h2>CGS Series</h2></div> 
+               
+                    <div class="content-guitar2 guitar6">
+                    <h2>CG Series</h2></div> 
+
+                    <div class="content-guitar2 guitar7">
+                    <h2>GS Series</h2></div> 
+                                  
+            </div>
+            <div id="content2">
+                <!--<div class='viewport'>
+                     <ul class='slidewrapper' data-current=0>
+                        <li class='slide'></li>
+                        <li class='slide second'></li>
+                        <li class='slide third'></li>
+                    </ul>
+                </div>
+-->
+                <div class="content-description"><h1>Classical Guitars</h1>
+                  <p>The finest hand-selected tonewoods and traditional craftsmanship together with subtle new construction finish and wood technologies give Yamaha acoustic guitars incredible sound, flawless playability and stunning looks.
+                </p>
+                </div>
+           
+                    <div class="content-guitar2 guitar4">
+                    <h2>C Series</h2></div> 
+               
+                    <div class="content-guitar2 guitar5">
+                    <h2>CGS Series</h2></div> 
+               
+                    <div class="content-guitar2 guitar6">
+                    <h2>CG Series</h2></div> 
+
+                    <div class="content-guitar2 guitar7">
+                    <h2>GS Series</h2></div> 
+                                  
+            </div>
+
+
+
+		<div id="footer">     
+
+        </div>
 	</div>
 </div>
 </body>
